@@ -1,0 +1,17 @@
+body {
+  background-color: #e6f4f1;
+}
+
+.bg-dark-gray {
+  background-color: #002f65;
+}
+.bg-ligth-green {
+  background-color: #e6f4f1;
+}
+.text-color-white {
+  color: #f3faff;
+}
+
+#btn-search:hover {
+  background-color: #b9c2c0;
+}
