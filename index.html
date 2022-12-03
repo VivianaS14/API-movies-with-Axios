@@ -19,33 +19,25 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Nav -->
-    <header class="mb-5">
-      <nav class="navbar bg-dark-gray">
-        <div class="container-fluid">
-          <a class="navbar-brand"
-            ><img
-              class="bg-ligth-green"
-              src="https://cdn-icons-png.flaticon.com/512/1101/1101793.png"
-              alt="Logo"
-              width="50"
-          /></a>
-        </div>
-      </nav>
-    </header>
     <!-- Contenedor Movies -->
-    <main>
+    <main class="mt-5">
       <div
         id="movie-container"
         class="container d-flex justify-content-around flex-wrap gap-4 mb-5"
       ></div>
 
       <div class="text-center fixed-bottom bg-dark-gray py-3">
-        <button id="btn-previous" type="button" class="btn bg-ligth-green">
+        <button
+          id="btn-previous"
+          type="button"
+          class="btn bg-ligth-green disabled"
+        >
+          <span aria-hidden="true">&laquo;</span>
           Previous
         </button>
         <button id="btn-next" type="button" class="btn bg-ligth-green">
           Next
+          <span aria-hidden="true">&raquo;</span>
         </button>
       </div>
     </main>

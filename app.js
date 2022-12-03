@@ -6,6 +6,7 @@ btnNext.addEventListener('click', () => {
     if (pag < 1000) {
         pag++
         getMovies();
+        btnPrevious.classList.remove('disabled')
     }
 })
 
