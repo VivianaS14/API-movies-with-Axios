@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+
 body {
   background-color: #e6f4f1;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .bg-dark-gray {
@@ -11,7 +14,48 @@ body {
 .text-color-white {
   color: #f3faff;
 }
-
 .bg-ligth-green:hover {
   background-color: #b9c2c0;
+}
+
+.movie-card {
+  overflow: hidden;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.movie-info span {
+  padding: 0.25rem 0.5rem;
+  background-color: #002f65;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+.movie-info span.red {
+  color: red;
+}
+.movie-info span.green {
+  color: greenyellow;
+}
+.overview {
+  background-color: #b9c2c0;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0 1s ease-in;
+}
+
+.movie-card:hover .overview {
+  transform: translateY(0);
 }
